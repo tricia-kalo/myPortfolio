@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: Arial, sans-serif; */
+    /* line-height: 1.6; */
+    background-color: #fff;
+}
+
+/* nav {
+    position: fixed;
+} */
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #9c1616;
+    height: 50px;
+    
+}
+
+
+header li {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li {
+    margin: 0 14px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 30px;
+    color: #000;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+
+/* PRESENTATION */
+.apropos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* align-items: center; */
+    /* height: 100vh; */
+    margin: 10px 205px;
+    margin-top: 50px;
+    padding: 6px;
+}
+
+.apropos .photo {
+    width: 50%;
+    height: 380px;
+    /* border-radius: 80%; */
+}
+
+.apropos .photo img {
+    width: 80%;
+    height: auto;
+    /* border-radius: 80%; */
+}
+
+.apropos .me {
+    width: 50%;
+    height: 420px;
+    /* border-radius: 50%; */
+    padding: 40px 5px;
+}
+
+.apropos .me h1 {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.apropos .me .titre {
+    font-size: 20px;
+    color: #7f1313;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.apropos .me p {
+    font-size: 16px;
+    color: #000;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.apropos .me .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7f1313;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* PROJETS */
+#projets {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+.projets {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    margin: 20px 70px;
+}
+
+/* .projet {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    margin: 30px 70px;
+} */
+
+.projets h3 {
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.projets ul {
+    /* list-style: disc; */
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.projets ul li {
+    font-size: 18px;
+    color: #000;
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+
+.projets .image_projet {
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin: 20px 0;
+    overflow: hidden;
+    background-color: #682323;
+    border: 1px solid #000;
+    transition: all 1s ease-in-out, transform 1s ease-in-out;
+    
+    
+}
+
+.projets .image_projet:hover {
+    transform: scale(1.05);
+    
+}
+
+.image_projet img {
+    width: 98%;
+    height: 97.5%;
+    text-align: center;
+    object-fit: cover;
+    /* transition: all 3s ease-in-out transform 3s ease-in-out; */
+}
+
+
+
+.projets .btn {
+    display: block;
+    padding: 10px 20px;
+    /* background-color: #7f1313; */
+    font-size: 18px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    /* border-radius: 10px; */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 15px auto;
+    border: 1px solid #000;
+}
+
+.projets .btn:hover {
+    background-color: #d15656;
+}
+
+
+/* EXPERIENCES */
+
+.experience {
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 20px 70px;
+    margin-bottom: 50px;
+}
+
+.experience h3 {
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.experience .duree {
+    width: 15%;
+    height: 100%;
+}
+
+.experience .duree h4 {
+    font-size: 18px;
+    color: #000;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.experience .poste {
+    width: 85%;
+    height: 100%;
+}
+
+
+
+
+.experience .taches li {
+    list-style-type: none;
+    font-size: 18px;
+    color: #000;
+    text-align: left;
+    margin-left: 40px;
+    padding-left: 15px;
+}
+
+.experience .taches li::before {
+    content: "✓";
+    color: #000;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.experience .titre {
+    list-style-type: disc;
+    font-size: 18px;
+    color: #000;
+    text-align: left;
+    margin-bottom: 3px;
+    margin-left: 18px;
+}
+
+
+/* FORMATIONS */
+
+.formation {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 20px 70px;
+    margin-bottom: 50px;
+}
+
+
+
+.formation h3 {
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.formation .duree {
+    width: 15%;
+    height: 100%;
+}
+
+.formation .duree h4 {
+    font-size: 18px;
+    color: #000;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.formation .poste {
+    width: 85%;
+    height: 100%;
+}
+
+/* .formation .carte li {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #3d1c1c;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+    text-align: center;
+} */
+
+
+.formation .taches li {
+    list-style-type: none;
+    font-size: 18px;
+    color: #000;
+    text-align: left;
+    margin-left: 40px;
+    padding-left: 15px;
+}
+
+.formation .taches li::before {
+    content: "✓";
+    color: #000;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.formation .titre {
+    list-style-type: disc;
+    font-size: 18px;
+    color: #000;
+    text-align: left;
+    margin-bottom: 3px;
+    margin-left: 18px;
+}
+
+/* COMPETENCES */
+.competences {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px 70px;
+}
+
+.carte {
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.carte li {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #9b1212;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+    text-align: center;
+}
+
+.carte li:hover {
+    background-color: #d15656;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+
+
+/* CONTACT */
+
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f2;
+    color: #171717;
+} */
+
+
+
+.contact {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.contact-container {
+    width: 100%;
+    max-width: 720px;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.contact-header {
+    margin-bottom: 35px;
+}
+
+.subtitle {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.contact-header h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.contact-header p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    background: #fafafa;
+    font-family: inherit;
+    font-size: 15px;
+    color: #171717;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+
+/* =========================
+   FOCUS
+========================= */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #171717;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(23, 23, 23, 0.08);
+}
+
+
+/* =========================
+   CHECKBOX
+========================= */
+
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.form-checkbox input {
+    width: 17px;
+    height: 17px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.form-checkbox label {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #666;
+    cursor: pointer;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 100%;
+    padding: 16px 25px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #171717;
+    color: #fff;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.submit-button span {
+    font-size: 20px;
+    transition: transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.submit-button:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .contact {
+        padding: 30px 15px;
+    }
+
+    .contact-container {
+        padding: 30px 22px;
+        border-radius: 15px;
+    }
+
+    .contact-header h1 {
+        font-size: 32px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+}
+
